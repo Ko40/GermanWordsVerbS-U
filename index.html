@@ -98,64 +98,64 @@
 <script>
   // 単語リスト（ドイツ語 - 日本語）
   const wordList = [
-    { german: 'schaden', english: '害を与える' },
-    { german: 'schaffen', english: '創造する、成し遂げる' },
-    { german: 'schämen', english: '恥じる' },
-    { german: 'schauen', english: '目を向ける' },
-    { german: 'sheinen', english: '輝く、～のように見える' },
-    { german: 'schenken', english: '贈る' },
-    { german: 'schicken', english: '送る' },
-    { german: 'schlafen', english: '寝る' },
-    { german: 'schlagen', english: 'たたく' },
-    { german: 'schließen', english: '閉める' },
-    { german: 'schmecken', english: 'おいしい、味がする' },
-    { german: 'schneiden', english: '切る' },
-    { german: 'schneien', english: '雪が降る' },
-    { german: 'schreiben', english: '書く' },
-    { german: 'schweigen', english: '沈黙する' },
-    { german: 'schwimmen', english: '泳ぐ' },
-    { german: 'sehen', english: '見る' },
-    { german: 'sein', english: '～である' },
-    { german: 'senden', english: '放送する、送る' },
-    { german: 'setzen', english: '座らせる、座る' },
-    { german: 'singen', english: '歌う' },
-    { german: 'sitzen', english: '座っている' },
-    { german: 'spazieren gehen', english: '散歩する' },
-    { german: 'spielen', english: 'スポーツをする、遊ぶ、楽器を演奏する' },
-    { german: 'springen', english: '跳ぶ' },
-    { german: 'spüren', english: '感じる' },
-    { german: 'stattfinden', english: '行われる' },
-    { german: 'stauen', english: '驚く' },
-    { german: 'stecken', english: '差さっている、差し込む' },
-    { german: 'stehen', english: '立っている' },
-    { german: 'stehlen', english: '盗む' },
-    { german: 'steigen', english: '登る' },
-    { german: 'stellen', english: '立てて置く' },
-    { german: 'studieren', english: '大学で学ぶ' },
-    { german: 'tanzen', english: '踊る' },
-    { german: 'tauschen', english: '交換する' },
-    { german: 'täuschen', english: 'だます' },
-    { german: 'teilen', english: '分ける' },
-    { german: 'telefonieren', english: '電話で話をする' },
-    { german: 'töten', english: '殺す' },
-    { german: 'tragen', english: '運ぶ' },
-    { german: 'treten', english: '一歩一歩歩く' },
-    { german: 'trauen', english: '信用する' },
-    { german: 'trinken', english: '飲む' },
-    { german: 'tun', english: 'する' },
-    { german: 'üben', english: '練習する' },
-    { german: 'überlegen', english: '熟考する' },
-    { german: 'übernachten', english: '泊まる' },
-    { german: 'überqueren', english: '横切る' },
-    { german: 'überraschen', english: '驚かす' },
-    { german: 'übersetzen', english: '翻訳する' },
-    { german: 'umsteigen', english: '乗り換える' },
-    { german: 'umziehen', english: '引っ越す' },
-    { german: 'unterbrechen', english: '中断する' },
-    { german: 'untergehen', english: '太陽などが沈む' },
-    { german: 'unterrichten', english: '教える' },
-    { german: 'unterschreiben', english: '署名する' },
-    { german: 'untersuchen', english: '診察する' },
+{ german: 'schaden', english: '害を与える/損害を与える' },  // "損害を与える"を追加
+{ german: 'schaffen', english: '創造する/成し遂げる' },  // "、"を"／"に修正
+{ german: 'schämen', english: '恥じる/恥ずかしく思う' },  // "恥ずかしく思う"を追加
+{ german: 'schauen', english: '目を向ける/見る' },  // "見る"を追加
+{ german: 'sheinen', english: '輝く/〜のように見える' },  // "～のように見える"の「～」を「〜」に統一
+{ german: 'schenken', english: '贈る/プレゼントする' },  // "プレゼントする"を追加
+{ german: 'schicken', english: '送る' },
+{ german: 'schlafen', english: '寝る/眠る' },  // "眠る"を追加
+{ german: 'schlagen', english: '叩く/打つ' },  // "打つ"を追加
+{ german: 'schließen', english: '閉める/閉じる' },  // "閉じる"を追加
+{ german: 'schmecken', english: '味がする/おいしい' },  // 順序を「味がする」を先に変更
+{ german: 'schneiden', english: '切る' },
+{ german: 'schneien', english: '雪が降る' },
+{ german: 'schreiben', english: '書く' },
+{ german: 'schweigen', english: '沈黙する/黙る' },  // "黙る"を追加
+{ german: 'schwimmen', english: '泳ぐ' },
+{ german: 'sehen', english: '見る/観る' },  // "観る"を追加
+{ german: 'sein', english: '〜である' },  // 修正: "～"を"〜"に統一
+{ german: 'senden', english: '放送する/送る' },  // "／"を使用
+{ german: 'setzen', english: '座らせる/座る' },
+{ german: 'singen', english: '歌う' },
+{ german: 'sitzen', english: '座っている' },
+{ german: 'spazieren gehen', english: '散歩する' },
+{ german: 'spielen', english: 'スポーツをする/遊ぶ/楽器を演奏する' },  // "、"を"／"に修正
+{ german: 'springen', english: '跳ぶ/飛び跳ねる' },  // "飛び跳ねる"を追加
+{ german: 'spüren', english: '感じる/感知する' },  // "感知する"を追加
+{ german: 'stattfinden', english: '行われる/開催される' },  // "開催される"を追加
+{ german: 'stauen', english: '驚く/びっくりする' },  // "びっくりする"を追加
+{ german: 'stecken', english: '差し込む/挿入する' },  // "差さっている"は省略
+{ german: 'stehen', english: '立っている' },
+{ german: 'stehlen', english: '盗む' },
+{ german: 'steigen', english: '登る/上昇する' },  // "上昇する"を追加
+{ german: 'stellen', english: '立てて置く/配置する' },  // "配置する"を追加
+{ german: 'studieren', english: '大学で学ぶ/専攻する' },  // "専攻する"を追加
+{ german: 'tanzen', english: '踊る/ダンスをする' },  // "ダンスをする"を追加
+{ german: 'tauschen', english: '交換する/取り替える' },  // "取り替える"を追加
+{ german: 'täuschen', english: 'だます/欺く' },  // "欺く"を追加
+{ german: 'teilen', english: '分ける/共有する' },  // "共有する"を追加
+{ german: 'telefonieren', english: '電話で話す' },  // 修正: "電話で話をする"を簡略化
+{ german: 'töten', english: '殺す' },
+{ german: 'tragen', english: '運ぶ/持つ' },  // "持つ"を追加
+{ german: 'treten', english: '踏む/蹴る' },  // "一歩一歩歩く"を削除し、動詞の意味を追加
+{ german: 'trauen', english: '信用する/信頼する' },  // "信頼する"を追加
+{ german: 'trinken', english: '飲む' },
+{ german: 'tun', english: 'する/行う' },  // "行う"を追加
+{ german: 'üben', english: '練習する/訓練する' },  // "訓練する"を追加
+{ german: 'überlegen', english: '熟考する/考慮する' },  // "考慮する"を追加
+{ german: 'übernachten', english: '泊まる' },
+{ german: 'überqueren', english: '横切る/渡る' },  // "渡る"を追加
+{ german: 'überraschen', english: '驚かす/驚かせる' },  // "驚かせる"を追加
+{ german: 'übersetzen', english: '翻訳する/訳す' },  // "訳す"を追加
+{ german: 'umsteigen', english: '乗り換える' },
+{ german: 'umziehen', english: '引っ越す/着替える' },  // "着替える"を追加
+{ german: 'unterbrechen', english: '中断する/遮る' },  // "遮る"を追加
+{ german: 'untergehen', english: '沈む' },  // "太陽などが沈む"を削除
+{ german: 'unterrichten', english: '教える/指導する' },  // "指導する"を追加
+{ german: 'unterschreiben', english: '署名する/サインする' },  // "サインする"を追加
+{ german: 'untersuchen', english: '診察する/調べる' },  // "調べる"を追加
     // 他の単語を追加
   ];
 
